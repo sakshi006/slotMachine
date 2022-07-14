@@ -1,0 +1,1 @@
+export const url = 'https://asia-southeast1-kc-stage-rp.cloudfunctions.net/slotMachine/'

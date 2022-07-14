@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
+@keyframes spin {
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+body { 
+  font-family: 'Hind', sans-serif !important;
+  background-image: url("../assets/BackgroundImg.png");
+}
+
+
+.container{
+  display: block;
+  margin: auto;
+  max-width: 84%;
+  position: relative;
+}
+
+.alert{
+  z-index: 9999;
+  position: absolute;
+  background-color:#ede9e9;
+  top: 34%;
+  padding: 0rem 0.4rem;
+  width: 100%;
+  height: fit-content;
+  border-radius: 1rem;
+  box-shadow: 1px 4px 15px 5px rgb(147, 146, 146);
+}
+
+
+.score-board{
+  display: flex;
+  padding: 10px;
+  box-shadow: 2px 3px 8px 1px #888888;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto 1rem auto;
+  border-radius: 0.4rem;
+  max-width:fit-content;
+}
+
+.score-inside{
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.score-inside p {
+  font-weight: bolder;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1rem;
+    margin: 0rem 1rem;
+    font-size: 1.046rem;
+}
+
+.icon{
+  margin: 0.1rem 0.1rem 0.1rem 0.5rem;
+}
+
+small{
+  font-size: 0.784rem;
+  font-weight: 400;
+}
+
+.head{
+  margin-top: 2rem;
+  font-weight: 500;
+  line-height: 23.55px;
+}
+
+.icons { 
+  display: inline-block;
+  width: 100px;
+  height: 360px;
+  overflow: hidden;
+  background: #fff url('../assets/Slot.svg') repeat-y;
+  will-change: backgroundPosition;
+  transition: 0.3s background-position ease-in-out;
+  padding: 0px 96px;
+  transform: translateZ(0);
+}
+
+.icons:nth-child(2) {
+  margin: 0 10px;
+}
+
+* { box-sizing: border-box; }
+
+.spinner-container {
+  overflow: hidden;
+  height: 360px;  
+  padding: 2em;
+  transform: translate(-50%, -50%) scale(.62, .62);
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  display: flex;
+  padding: 0rem;
+  transition: 0.3s transform;
+  border: 1.3rem solid #D45339;
+  border-radius: 5.4rem;
+  border-image: url('../assets/slotFrame.svg') 40 fill;
+  border-image-outset: 80px;
+  border-image-width: 236px 80px;
+  border-image-slice: 52;
+}
+
+.spinner-outer{
+  background-color: #D45339;
+}
+
+
+.app-wrap.winner-false {
+  animation: linear 1s spin;
+}
+
+.spinner-container::after {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 160px;
+  top: 38%;
+  transform: translateY(-50%);
+  right: 30px;
+  left: 30px;
+  background: rgba(255, 0, 0, .1);  
+}
+
+.gradient-fade {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  left: 32px;
+}
+
+@media screen and (max-width: 1000px) {
+  .spinner-container {
+    transform: translate(-50%, -50%) scale(.55, .55);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .spinner-container {
+    transform: translate(-50%, -50%) scale(.4, .35);
+  }
+}
+
+.result{
+  margin-top: 28rem;
+  font-size: 1rem;
+}
+
+.result-btn{
+  background-color: rgb(0, 177, 0);
+  color: white;
+  padding: 0.6rem 2.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-weight: bolder;
+}
+
+.result p{
+ color: "#293C4B";
+ font-weight: bold;
+ font-size: 1rem;
+}
+
+.result-bottom{
+  background-color: rgb(245, 240, 240);
+  padding: 0.6rem 1rem;
+  margin: 1rem auto;
+  max-width: fit-content;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .result{
+    margin-top: 18rem;
+  } */
+   .score-board{ 
+    margin: 2rem auto 0rem auto;
+   }
+}
